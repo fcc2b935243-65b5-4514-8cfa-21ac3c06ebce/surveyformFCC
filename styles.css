@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  min-width: 50%;
+  font-family: Comic Sans Ms;
+  background-color: green;
+}
+
+label {
+  display: block;
+  padding: 5px;
+}
+
+label[id="radio-label"] {
+  display: inline-block;
+}
+
+textarea {
+  display: block;
+  margin: auto;
+  margin-top: 1px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
+
+h1, p {
+  margin: 0;
+}

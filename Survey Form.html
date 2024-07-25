@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Build a Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Short explanation</p>
+    <form id="survey-form" action="/submit-form" method="GET">
+      <fieldset>
+        <label id="name-label">You're required to enter your name:
+        <input id="name" type="text" required placeholder="John Doe">
+        </label>
+        <label id="email-label">You're required to enter your email:
+        <input id="email" required type="email" placeholder="required@dot.com">
+        </label>
+        <label id="number-label">Enter your age: 
+        <input id="number" type="number" min="13" max="100" placeholder="13-100">
+        </label>
+        <label for="dropdown-label">Choose an option:
+        <select id="dropdown">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+        </select>
+        </label>
+        <label id="radio-label">A different choice:
+        <input id="radio" name="radioName" type="radio" checked value="choiceOne">Choice one
+        </label>
+        <label id="radio-label">
+        <input id="radio" name="radioName" type="radio" value="choiceTwo">Choice two
+        </label>
+        <label id="checkbox-label">Another choice:
+          <input id="checkboxes" type="checkbox" value="checkOne">One
+          <input id="checkboxes" type="checkbox" value="checkTwo">Two
+          <input id="checkboxes" type="checkbox" value="checkThree">Three
+        </label>
+        Say some more:
+        <textarea placeholder="Enter text here..."></textarea>
+        <label for="submit">
+        <input id="submit" type="submit"></label>
+      </fieldset>
+    </form>
+  </body>
+</html>
